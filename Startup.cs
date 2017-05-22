@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 
-namespace ark_oauth_dotnet
+namespace ArkApplication
 {
     public class Startup
     {
