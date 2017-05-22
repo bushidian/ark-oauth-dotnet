@@ -14,12 +14,20 @@ namespace ArkApplication
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+
+            var config = new ConfigurationBuilder()
+             .SetBasePath(Directory.GetCurrentDirectory())
+             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+             .Build();
+
+            BuildWebHost(config, args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHost BuildWebHost(IConfiguration config, string[] args) =>
+
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseConfiguration(config)
                 .Build();
     }
 }
