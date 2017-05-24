@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ArkApplication.Controllers
+namespace Ark.OAuth.Controllers
 {
     public class HomeController : Controller
     {
