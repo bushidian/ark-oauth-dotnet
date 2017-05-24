@@ -55,8 +55,7 @@ namespace Ark.OAuth.Services
         public Task SetAsync(string key, T item, double expiration)
         {
             key = GetKey(key);
-            var expirationTimeSpan  = DateTime.Now.AddMinutes(expiration) - DateTime.Now;
-            _cache.Set(key, item, expirationTimeSpan);
+            _cache.Set(key, item, TimeSpan.FromMinutes(expiration));
             return Task.FromResult(0);
         }
     }
