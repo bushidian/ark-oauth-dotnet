@@ -19,6 +19,33 @@ namespace Ark.OAuth
             public const string RSA_SHA_256 = "RS256";
         }
 
+        #region UI Constants
+
+        public static class UIConstants
+        {
+            // the limit after which old messages are purged
+            public const int CookieMessageThreshold = 2;
+
+            public static class DefaultRoutePathParams
+            {
+                public const string Error = "errorId";
+                public const string Login = "returnUrl";
+                public const string Consent = "returnUrl";
+                public const string Logout = "logoutId";
+                public const string Custom = "returnUrl";
+            }
+
+            public static class DefaultRoutePaths
+            {
+                public const string Login = "/account/login";
+                public const string Logout = "/account/logout";
+                public const string Consent = "/consent";
+                public const string Error = "/home/error";
+            }
+        }
+
+        #endregion
+
         #region ProtocolRoutePaths
 
         public static class ProtocolRoutePaths
