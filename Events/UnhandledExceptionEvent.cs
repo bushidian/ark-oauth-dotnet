@@ -4,12 +4,12 @@
 
 using System;
 
-namespace IdentityServer4.Events
+namespace Ark.OAuth.Events
 {
     /// <summary>
     /// Event for unhandled exceptions
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Ark.OAuth.Events.Event" />
     public class UnhandledExceptionEvent : Event
     {
         /// <summary>
