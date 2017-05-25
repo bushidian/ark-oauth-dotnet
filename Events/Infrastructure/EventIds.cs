@@ -1,4 +1,4 @@
-namespace Ark.OAuth.Services.Events
+namespace Ark.OAuth.Events
 {
     public static class EventIds
     {

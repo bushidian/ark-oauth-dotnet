@@ -1,5 +1,5 @@
 
-namespace Ark.OAuth.Services.Events
+namespace Ark.OAuth.Events
 {
     /// <summary>
     /// Categories for events

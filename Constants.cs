@@ -1,4 +1,8 @@
 using System;
+using Ark.OAuth.Hosting;
+using Ark.OAuth.Models;
+using System;
+using System.Collections.Generic;
 
 namespace Ark.OAuth
 {
@@ -74,6 +78,24 @@ namespace Ark.OAuth
         }
 
         #endregion
+
+        #region
+
+        public static readonly Dictionary<string, EndpointName> EndpointPathToNameMap = new Dictionary<string, EndpointName>
+        {
+            { ProtocolRoutePaths.Authorize, EndpointName.Authorize },
+            { ProtocolRoutePaths.CheckSession, EndpointName.CheckSession},
+            { ProtocolRoutePaths.DiscoveryConfiguration, EndpointName.Discovery},
+            { ProtocolRoutePaths.EndSession, EndpointName.EndSession },
+            { ProtocolRoutePaths.Introspection, EndpointName.Introspection },
+            { ProtocolRoutePaths.Revocation, EndpointName.Revocation },
+            { ProtocolRoutePaths.Token, EndpointName.Token },
+            { ProtocolRoutePaths.UserInfo, EndpointName.UserInfo },
+        };
+
+
+        #endregion
+
 
     }
 }

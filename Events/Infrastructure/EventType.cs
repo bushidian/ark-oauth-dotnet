@@ -1,4 +1,4 @@
-namespace Ark.OAuth.Services.Events
+namespace Ark.OAuth.Events
 {
     /// <summary>
     /// Indicates if the event is a success or fail event.
