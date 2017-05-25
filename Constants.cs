@@ -1,7 +1,6 @@
 using System;
 using Ark.OAuth.Hosting;
 using Ark.OAuth.Models;
-using System;
 using System.Collections.Generic;
 
 namespace Ark.OAuth
