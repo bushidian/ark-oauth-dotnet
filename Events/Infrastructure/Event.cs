@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Ark.OAuth.Extensions;
 
-namespace Ark.OAuth.Services.Events
+namespace Ark.OAuth.Events
 {
   /// <summary>
     /// Models base class for events raised from IdentityServer.
